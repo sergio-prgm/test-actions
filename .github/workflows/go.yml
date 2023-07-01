@@ -30,7 +30,7 @@ jobs:
       
       
     - name: Run & output
-      run: ./bin/main > ./results.txt && echo ./results.txt
+      run: ./bin/main > ./results.txt && cat ./results.txt
       
     - name: Upload Go results
       uses: actions/upload-artifact@v3
