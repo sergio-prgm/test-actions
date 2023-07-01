@@ -28,12 +28,15 @@ jobs:
     - name: Build
       run: go build -o ./bin/main ./...
       
-    - name: Run & output
-      run: ./bin/main > results.txt
+    - name: See results
+      run: ./bin/main
       
-    - name: Upload Go results
-      uses: actions/upload-artifact@v3
-      with:
-        name: Go-results
-        path: results.txt
+#    - name: Run & output
+#      run: ./bin/main > results.txt
+      
+#    - name: Upload Go results
+#      uses: actions/upload-artifact@v3
+#      with:
+#        name: Go-results
+#        path: results.txt
         
